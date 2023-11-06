@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/3-footer.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css">
+    <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css">
+    <link rel="icon" href="../static/images/icon.png" />
+    <title>HBnB</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../static/scripts/2-hbnb.js?{{ cache_id }}"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+    </header>
+    <div class="container">
+      <section class="filters">
+        <div class="locations">
+          <h3>States</h3>
+          <h4>&nbsp;</h4>
+          <div class="popover">
+            <ul>
+              <li>
+                <h2>State Name:</h2>
+                <ul>
+                  <li>City Name</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <h4>&nbsp;</h4>
+          <div class="popover">
+            <ul>
+              <li><input type="checkbox" data-name="Amenity Name" data-id="Amenity ID"> Amenity Name</li>
+            </ul>
+          </div>
+        </div>
+        <button type="button">Search</button>
+      </section>
+      <div class="placesh1"><h1>Places</h1></div>
+      <section class="places">
+        <article>
+          <div class="title_box">
+            <h2>Place Name</h2>
+            <div class="price_by_night">$Price per Night</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">Guests</div>
+            <div class="number_rooms">Bedrooms</div>
+            <div class="number_bathrooms">Bathrooms</div>
+          </div>
+          <div class="user">
+            <b>Owner:</b> Owner's Name
+          </div>
+          <div class="description">
+            Place Description
+          </div>
+        </article>
+      </section>
+    </div>
+    <footer>
+      <p>Holberton School</p>
+    </footer>
+  </body>
+</html>
